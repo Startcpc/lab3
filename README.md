@@ -158,6 +158,7 @@ python -m src.aviation_parts
 ```text
 lab3/
 ├── src/
+│   ├── __init__.py
 │   └── aviation_parts/
 │       ├── __init__.py
 │       ├── __main__.py
@@ -169,7 +170,9 @@ lab3/
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── README.md
-└── pyproject.toml
+├── pyproject.toml
+├── requirements.txt
+└── uv.lock
 ```
 
 ## назначение файлов
@@ -185,7 +188,8 @@ lab3/
 | `pyproject.toml` | настройки проекта и зависимости |
 | `.pre-commit-config.yaml` | настройки проверок кода |
 | `.gitignore` | файлы, которые Git должен игнорировать |
-
+#### Замечание:
+первый __init__.py (src) нужен для правильного определения пути пакета и работы mypy, а второй — чтобы Python воспринимал aviation_parts как пакет
 ## тестирование
 
 для проверки используется `pytest`

@@ -166,6 +166,7 @@ lab3/
 │       ├── catalog.py
 │       └── errors.py
 ├── tests/
+│   ├── __init__.py
 │   └── test_catalog.py
 ├── .gitignore
 ├── .pre-commit-config.yaml
